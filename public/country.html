@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country Info</title>
+    <link rel="stylesheet" href="/styles/styles.css">
+</head>
+<body>
+    <header>
+        <h1 id="country-name">Country Name</h1>
+    </header>
+
+    <main>
+        <ul id="country-info">
+            <li><strong>Budget:</strong> <span id="budget"></span></li>
+            <li><strong>When to Go:</strong> <span id="when-to-go"></span></li>
+            <li><strong>Status:</strong> <span id="status"></span></li>
+            <li><a id="itinerary-link" href="#" target="_blank">View Itinerary</a></li>
+        </ul>
+    </main>
+
+    <script>
+        const countryData = JSON.parse(localStorage.getItem('selectedCountry'));
+        if (countryData) {
+            document.getElementById('country-name').textContent = countryData.name;
+            document.getElementById('budget').textContent = countryData.estimatedBudget;
+            document.getElementById('when-to-go').textContent = countryData.bestTimeToVisit;
+            document.getElementById('status').textContent = countryData.active ? "Active" : "Not Active";
+            document.getElementById('itinerary-link').href = countryData.itineraryLink;
+        } else {
+            document.body.textContent = "Error: No country selected.";
+        }
+    </script>
+</body>
+</html>

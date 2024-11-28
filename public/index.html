@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country Tier List</title>
+    <link rel="stylesheet" href="/styles/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Country Tier List</h1>
+    </header>
+
+    <main>
+        <div id="tiers-container">
+            <!-- Tiers will be dynamically populated here -->
+        </div>
+    </main>
+    
+    <!-- Popup Modal -->
+    <div id="popup-modal" class="hidden">
+        <div class="modal-content">
+            <h2>Add a Ranked Country</h2>
+            <form id="add-country-form">
+                <label for="country-name">Country Name:</label>
+                <input type="text" id="country-name" name="country-name" required>
+
+                <label for="country-tier">Tier:</label>
+                <select id="country-tier" name="country-tier" required>
+                    <option value="S">S</option>
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                    <option value="D">D</option>
+                </select>
+
+                <label for="country-visited">Visited:</label>
+                <input type="checkbox" id="country-visited" name="country-visited">
+
+                <button type="submit" id="add-country-btn">Add Country</button>
+            </form>
+            <button id="close-modal-btn">Close</button>
+        </div>
+    </div>
+
+    <script src="/scripts/main.js" defer></script>
+</body>
+</html>

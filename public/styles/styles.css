@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+main {
+    padding: 1rem;
+    text-align: center;
+}
+
+.tiers-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.tier-row {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: flex-start;
+}
+
+.tier-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    width: 50px;
+    text-align: center;
+    color: white;
+    background-color: #4CAF50;
+    padding: 0.5rem;
+    border-radius: 4px;
+}
+
+.tier-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.country-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.country-button {
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+
+.country-button:hover {
+    transform: scale(1.1);
+}
+
+/* Modal */
+#popup-modal.hidden {
+    display: none;
+}
+
+.modal-content {
+    background: white;
+    padding: 2rem;
+    border-radius: 5px;
+    text-align: left;
+    width: 300px;
+}
+
+.modal-content h2 {
+    margin-top: 0;
+}

@@ -1,0 +1,56 @@
+[
+    {
+        "name": "Australia",
+        "tier": "A",
+        "visited": true,
+        "bestTimeToVisit": "Apr-Nov",
+        "active": true,
+        "idealLength": 14,
+        "flights": "Varies",
+        "hotels": "$150",
+        "restaurants": "$60",
+        "estimatedBudget": "$4,500",
+        "budgetPerNight": "$321",
+        "wonderScore": 6,
+        "thingsToDoScore": 12,
+        "foodScore": 12,
+        "transportationScore": 5,
+        "safetyScore": 15,
+        "overallScore": 50,
+        "details": {
+            "wonder": 3,
+            "thingsToDo": 4,
+            "food": 4,
+            "transportation": 5,
+            "safety": 5
+        },
+        "itineraryLink": "https://example.com/australia-itinerary"
+    },
+    {
+        "name": "Argentina",
+        "tier": "B",
+        "visited": false,
+        "bestTimeToVisit": "Varies",
+        "active": true,
+        "idealLength": 14,
+        "flights": "$1,200",
+        "hotels": "$80",
+        "restaurants": "$50",
+        "estimatedBudget": "$3,500",
+        "budgetPerNight": "$250",
+        "wonderScore": 9,
+        "thingsToDoScore": 13.5,
+        "foodScore": 9,
+        "transportationScore": 3,
+        "safetyScore": 10.5,
+        "overallScore": 45,
+        "details": {
+            "wonder": 4,
+            "thingsToDo": 4,
+            "food": 3,
+            "transportation": 3,
+            "safety": 3
+        },
+        "itineraryLink": "https://example.com/argentina-itinerary"
+    }
+]
